@@ -2,11 +2,6 @@
 require("@nomiclabs/hardhat-ethers");
 const contractAddress = `${process.env.CONTRACT_ADDRESS}`
 
-task("qwe", "asd")
-  .setAction(async (taskArgs) => {
-    console.log(contractAddress);
-});
-
 task("addVoting", "create voting by name and candidates array")
   .addParam("name", "poll name")
   .addParam("candidates", "candidates array")
